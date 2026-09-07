@@ -3,6 +3,9 @@ name: Stock Telegram Bot
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "*/5 * * * *"
+
 jobs:
   run-stock-bot:
     runs-on: ubuntu-latest
